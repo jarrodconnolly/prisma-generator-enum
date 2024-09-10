@@ -1,0 +1,28 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator enum {
+  provider = "node ./src/cli/generator.js"
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}
+
+enum UserStatus {
+  UNVERIFIED
+  ACTIVE
+  PENDING
+  INACTIVE
+  SUSPENDED
+}
+
+model User {
+  id     Int        @id @default(autoincrement())
+  name   String
+  role   UserRole
+  status UserStatus
+}

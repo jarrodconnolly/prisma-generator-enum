@@ -1,0 +1,40 @@
+{
+  "name": "prisma-generator-enum",
+  "description": "Prisma generator for enum types",
+  "version": "1.0.0",
+  "type": "module",
+  "author": {
+    "name": "Jarrod Connolly",
+    "email": "jarrod@nestedquotes.ca"
+  },
+  "license": "MIT",
+  "keywords": [
+    "prisma",
+    "generator",
+    "enum"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarrodconnolly/prisma-generator-enum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jarrodconnolly/prisma-generator-enum/issues"
+  },
+  "bin": {
+    "prisma-generator-enum": "src/cli/generator.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "prisma:generate": "npx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/generator-helper": "^5.19.1",
+    "@prisma/internals": "^5.19.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.1",
+    "semantic-release": "^24.1.0"
+  }
+}

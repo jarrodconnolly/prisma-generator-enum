@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import generatorHelper from '@prisma/generator-helper';
 import { generate } from '../lib/enum-generator.js';
 

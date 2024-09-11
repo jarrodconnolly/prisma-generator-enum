@@ -1,5 +1,5 @@
 {
-  "name": "prisma-generator-enum",
+  "name": "prisma-generator-enumerator",
   "description": "Prisma generator for enum types",
   "version": "1.0.0",
   "type": "module",

@@ -22,9 +22,6 @@ export async function generate(options) {
   try {
     await mkdir(outputDir, { recursive: true });
 
-    //await writeFile('./test.json', JSON.stringify(options.dmmf.datamodel));
-
-
     const enumerations = generateEnumerations(options.dmmf, className);
 
     await writeFile(join(outputDir, outputFile), enumerations);
@@ -40,5 +37,5 @@ function generateEnumerations(dmmf, className) {
     const values = enumModel.values.map(value => `'${value.name}'`).join(',');
     return `\t${enumModel.name} = [${values}];`;
   });
-  return `class ${className} {\n${enums.join('\n')}\n}`;
+  return `export class ${className} {\n${enums.join('\n')}\n}`;
 }

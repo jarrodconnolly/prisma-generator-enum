@@ -7,17 +7,19 @@ generator enum {
   provider = "node ./src/cli/generator.js"
 }
 
+/// The users role
 enum UserRole {
-  ADMIN
-  USER
+  ADMIN /// Administrator
+  USER /// User
 }
 
+/// The users status
 enum UserStatus {
-  UNVERIFIED
-  ACTIVE
-  PENDING
-  INACTIVE
-  SUSPENDED
+  UNVERIFIED /// Unverified
+  ACTIVE /// Active
+  PENDING /// Pending
+  INACTIVE /// Inactive
+  SUSPENDED /// Suspended
 }
 
 model User {

@@ -10,3 +10,9 @@ Automatically generate enumerations for frontend use from your <a href="https://
 ## Usage
 
 Coming soon...
+
+## Thanks
+
+https://github.com/rauschma/enumify
+Copyright (c) 2020 Axel Rauschmayer
+License: MIT

@@ -24,10 +24,15 @@
     "prisma-generator-enum": "src/cli/generator.js"
   },
   "files": [
-    "src"
+    "src",
+    "dist",
+    "test"
   ],
   "scripts": {
-    "prisma:generate": "npx prisma generate"
+    "generate": "npx prisma generate",
+    "pretest": "npm run generate",
+    "test": "node --test \"**/*.test.js\"",
+    "build": "terser src/lib/enumify.js --output dist/enumify.js --compress"
   },
   "dependencies": {
     "@prisma/generator-helper": "^5.19.1",
@@ -37,6 +42,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "prisma": "^5.19.1",
-    "semantic-release": "^24.1.0"
+    "semantic-release": "^24.1.1",
+    "terser": "^5.32.0"
   }
 }

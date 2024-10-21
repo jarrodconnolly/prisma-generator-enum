@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/jarrodconnolly/prisma-generator-enum/compare/v2.0.0...v3.0.0) (2024-10-21)
+
+
+### Bug Fixes
+
+* change the name of the key field ([16d57f4](https://github.com/jarrodconnolly/prisma-generator-enum/commit/16d57f4f99b37557b23847583729749848d6f2a1))
+
+
+### BREAKING CHANGES
+
+* key field is part of the public API, this is a breaking change
+
 # [2.0.0](https://github.com/jarrodconnolly/prisma-generator-enum/compare/v1.0.0...v2.0.0) (2024-09-16)
 
 

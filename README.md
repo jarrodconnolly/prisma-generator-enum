@@ -11,6 +11,9 @@ Automatically generate enumerations for frontend use from your <a href="https://
 
 Coming soon...
 
+## Conventional Commits
+This project uses the https://www.conventionalcommits.org/en/v1.0.0/ specification.
+
 ## Thanks
 
 https://github.com/rauschma/enumify

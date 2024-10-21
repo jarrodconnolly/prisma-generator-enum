@@ -15,8 +15,11 @@ test('UserRole', (t) => {
   assert.equal(UserRole.ADMIN.label, 'Administrator');
   assert.equal(UserRole.USER.label, 'User');
 
-  assert.equal(UserRole.enumKeys.length, 2);
-  assert.deepEqual(UserRole.enumKeys, ['ADMIN', 'USER']);
+  assert.equal(UserRole.ADMIN.key, 'ADMIN');
+  assert.equal(UserRole.USER.key, 'USER');
+
+  assert.equal(UserRole.keys.length, 2);
+  assert.deepEqual(UserRole.keys, ['ADMIN', 'USER']);
 
   assert.equal(UserRole.enumDocs.length, 2);
   assert.deepEqual(UserRole.enumDocs, ['Administrator', 'User']);
